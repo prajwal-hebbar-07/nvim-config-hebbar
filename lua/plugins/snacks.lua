@@ -16,7 +16,7 @@ return {
     { "<leader>e", function() require("snacks.explorer")() end, desc = "File Explorer" },
 
     -- Git Integration
-    { "<leader>gb", function() require("snacks.picker").git_branches() end, desc = "Git Branches" },
+    { "<leader>gb", function() require("snacks.git").blame_line() end, desc = "Git Blame Line" },
     { "<leader>gl", function() require("snacks.picker").git_log() end, desc = "Git Log" },
     { "<leader>gs", function() require("snacks.picker").git_status() end, desc = "Git Status" },
     { "<leader>gd", function() require("snacks.picker").git_diff() end, desc = "Git Diff (Hunks)" },
