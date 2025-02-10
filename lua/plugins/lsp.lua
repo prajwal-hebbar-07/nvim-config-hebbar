@@ -11,7 +11,6 @@ return {
 		local servers = {
 			"html",
 			"cssls",
-			"tsserver",
 			"eslint",
 			"jsonls",
 			"gopls",
@@ -26,6 +25,7 @@ return {
 			"pyright",
 			"solidity",
 			"solidity_ls_nomicfoundation",
+			"ts_ls", -- Use typescript-language-server
 		}
 
 		require("mason-lspconfig").setup({
