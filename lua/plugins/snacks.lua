@@ -11,6 +11,7 @@ return {
 		picker = { enabled = true },
 		indent = { enabled = true },
 		statuscolumn = { enabled = true },
+		-- TODO: Search if there is a better way to configure status column.
 	},
 	keys = {
 		-- File Explorer
@@ -90,6 +91,15 @@ return {
 			end,
 			desc = "Visual selection or word",
 			mode = { "n", "x" },
+		},
+
+		-- Search Keymaps
+		{
+			"<leader>sk",
+			function()
+				require("snacks.picker").keymaps()
+			end,
+			desc = "Search Keymaps",
 		},
 
 		-- Indentation
