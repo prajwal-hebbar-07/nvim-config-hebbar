@@ -7,7 +7,6 @@ return {
     explorer = { enabled = true },
     git = { enabled = true },
     bufdelete = { enabled = true },
-    gitblame = { enabled = true },
     lazygit = { enabled = true },
     picker = { enabled = true },
     indent = { enabled = true }
@@ -25,9 +24,6 @@ return {
 
     -- Buffer Deletion
     { "<leader>bd", function() require("snacks.bufdelete")() end, desc = "Delete Buffer" },
-
-    -- Git Blame
-    { "<leader>gy", function() vim.cmd("Git blame") end, desc = "Git Blame" },
 
     -- Picker for Files and Words
     { "<leader>ff", function() require("snacks.picker").files() end, desc = "Find Files" },
