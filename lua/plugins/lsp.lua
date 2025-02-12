@@ -58,7 +58,9 @@ return {
 		for _, lsp in ipairs(servers) do
 			lspconfig[lsp].setup({
 				capabilities = capabilities,
-				on_attach = lsp_keymaps,
+				on_attach = function(client, bufnr)
+					lsp_keymaps(bufnr)
+				end,
 			})
 		end
 	end,
