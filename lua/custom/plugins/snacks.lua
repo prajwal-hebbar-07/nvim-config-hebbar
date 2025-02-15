@@ -1,4 +1,3 @@
--- ~/.config/nvim/lua/custom/plugins/snacks.lua
 return {
     "folke/snacks.nvim",
     priority = 1000,
