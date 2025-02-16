@@ -59,7 +59,7 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 -- Use the system clipboard for all operations.
-vim.opt.clipboard = "unnamedplus"
+-- vim.opt.clipboard = "unnamedplus"
 
 -- Highlights search results
 vim.opt.hlsearch = true

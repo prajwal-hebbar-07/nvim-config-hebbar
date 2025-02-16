@@ -6,4 +6,5 @@ require("lazy").setup({
 	{ import = "custom.plugins.rosepine" },
 	{ import = "custom.plugins.mason" },
 	{ import = "custom.plugins.conform" },
+	-- { import = "custom.plugins.whichkey" },
 })
