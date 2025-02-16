@@ -24,6 +24,7 @@ return {
 		},
 		picker = {
 			enabled = true,
+			ignore_patterns = { "node_modules/" },
 		},
 		quickfile = {
 			enabled = false,
