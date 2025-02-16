@@ -4,4 +4,5 @@ require("lazy").setup({
 	-- { import = "custom.plugins.tokyonight" },
 	{ import = "custom.plugins.treesitter" },
 	{ import = "custom.plugins.rosepine" },
+	{ import = "custom.plugins.mason" },
 })
