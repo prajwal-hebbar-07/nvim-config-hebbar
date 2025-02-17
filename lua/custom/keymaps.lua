@@ -108,3 +108,9 @@ vim.keymap.set(
 	"<cmd>lua vim.diagnostic.goto_next()<CR>",
 	{ noremap = true, silent = true, desc = "Next diagnostic" }
 )
+
+-- Insert Mode to Normal Mode and clearing the highlights.
+vim.keymap.set("i", "<C-c>", "<Esc>") -- Uses Ctrl-c to escape insert mode.
+vim.keymap.set("n", "<C-c>", ":nohl<CR>", { desc = "Clear search hl", silent = true }) -- Clears search highlights.
+vim.keymap.set("i", "jj", "<Esc>") -- Uses jj to escape insert mode.
+vim.keymap.set("i", "jk", "<Esc>") -- Uses jk to escape insert mode.
