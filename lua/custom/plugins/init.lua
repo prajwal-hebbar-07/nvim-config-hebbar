@@ -7,4 +7,5 @@ require("lazy").setup({
 	{ import = "custom.plugins.mason" },
 	{ import = "custom.plugins.conform" },
 	-- { import = "custom.plugins.whichkey" },
+	{ import = "custom.plugins.completions" },
 })

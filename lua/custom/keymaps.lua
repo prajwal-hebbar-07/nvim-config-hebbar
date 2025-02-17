@@ -114,3 +114,10 @@ vim.keymap.set("i", "<C-c>", "<Esc>") -- Uses Ctrl-c to escape insert mode.
 vim.keymap.set("n", "<C-c>", ":nohl<CR>", { desc = "Clear search hl", silent = true }) -- Clears search highlights.
 vim.keymap.set("i", "jj", "<Esc>") -- Uses jj to escape insert mode.
 vim.keymap.set("i", "jk", "<Esc>") -- Uses jk to escape insert mode.
+
+vim.keymap.set(
+	"n",
+	"<leader>s",
+	[[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+	{ desc = "Replace word cursor is on globally" }
+) -- Replaces the word under the cursor globally.
